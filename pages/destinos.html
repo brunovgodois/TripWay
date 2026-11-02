@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TripWay - Destinos</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -13,44 +14,93 @@
 
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="destinos.html">Destinos</a></li>
-                <li><a href="pacotes.html">Pacotes</a></li>
-                <li><a href="contato.html">Contato</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="destinos.html" aria-current="page">Destinos</a></li>
+            <li><a href="pacotes.html">Pacotes</a></li>
+            <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
-        <main>
-            <section>
-                <h2>Destino 1</h2>
-
-                <ul>
-                    <li>Rio de janeiro</li>
-                    <p>Conhecido por suas belas praias, paisagens naturais e pontos turísticos famosos, o Rio de Janeiro
-                        combina natureza, cultura e uma atmosfera vibrante.</p>
-                    <img src="../images/rj.png" alt="Vista do RJ">
-                </ul>
-
-                <h2>Destino 2</h2>
-
-                <ul>
-                    <li>Lençois Maranhenses</li>
-                    <p>Famoso por suas grandes dunas de areia branca e lagoas de águas cristalinas, o Parque Nacional
-                        dos Lençóis Maranhenses possui uma das paisagens mais impressionantes do país.</p>
-                    <img src="../images/lençois.png" alt="Paisagem Lençois Maranhenses">
-                </ul>
-
-                <h2>Destino 3</h2>
-
-                <ul>
-                    <li>Fernando de Noronha</li>
-                    <p>Arquipélago conhecido por suas praias paradisíacas, águas cristalinas e rica vida marinha, sendo
-                        um dos principais destinos naturais do Brasil.</p>
-                    <img src="../images/noronha.png" alt="Vista de Fernando de Noronha">
-                </ul>
-            </section>
-        </main>
     </header>
-    <footer>&copy; 2026 TripWay</footer>
+         <main id="conteudo" class="section-space">
+        <div class="container section-heading">
+            <h1>Destinos</h1>
+        </div>
+
+        <section class="container">
+            <div class="section-heading">
+                <h2>Conheça nossos destinos</h2>
+            </div>
+
+            <div class="cards-container">
+                <article class="card">
+                    <img
+                        class="card-image"
+                        src="../images/rj.png"
+                        alt="Vista do Rio de Janeiro"
+                    >
+
+                    <div class="card-body">
+                        <h3>Rio de Janeiro</h3>
+
+                        <p>
+                            Conhecido por suas belas praias, paisagens naturais
+                            e pontos turísticos famosos, o Rio de Janeiro combina
+                            natureza, cultura e uma atmosfera vibrante.
+                        </p>
+
+                        <a class="text-link" href="pacotes.html">
+                            Conhecer pacotes
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img
+                        class="card-image"
+                        src="../images/lençois.png"
+                        alt="Dunas e lagoas dos Lençóis Maranhenses"
+                    >
+
+                    <div class="card-body">
+                        <h3>Lençóis Maranhenses</h3>
+
+                        <p>
+                            Famoso por suas grandes dunas de areia branca e
+                            lagoas de águas cristalinas, o Parque Nacional
+                            dos Lençóis Maranhenses possui uma das paisagens
+                            mais impressionantes do país.
+                        </p>
+
+                        <a class="text-link" href="pacotes.html">
+                            Conhecer pacotes
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img
+                        class="card-image"
+                        src="../images/noronha.png"
+                        alt="Praia e paisagem de Fernando de Noronha"
+                    >
+
+                    <div class="card-body">
+                        <h3>Fernando de Noronha</h3>
+
+                        <p>
+                            Arquipélago conhecido por suas praias paradisíacas,
+                            águas cristalinas e rica vida marinha, sendo um
+                            dos principais destinos naturais do Brasil.
+                        </p>
+
+                        <a class="text-link" href="pacotes.html">
+                            Conhecer pacotes
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>

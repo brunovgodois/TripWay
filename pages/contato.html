@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TripWay</title>
+    <title>TripWay - Contato</title>
 </head>
 
 <body>
@@ -22,41 +22,68 @@
     </header>
 
     <main>
-        <section>
+        <section class="secao-contato">
             <h2>Faça sua reserva</h2>
             <p>Preencha o formulário e entraremos em contato.</p>
 
-            <img src="../images/banner.jpeg" alt="Banner do TripWay">
+            <img class="banner-contato" src="../images/banner.jpeg" alt="Banner do TripWay">
 
-            <form action="#" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+            <form class="form-contato" action="#" method="post">
 
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <div class="grupo-dados">
+                    <h3>Seus dados</h3>
 
-                <label for="destino">Destino de interesse:</label>
-                <select id="destino" name="destino">
-                    <option value="">Selecione...</option>
-                    <option value="praia">Praia</option>
-                    <option value="montanha">Roça</option>
-                    <option value="cidade">Cidade</option>
-                </select>
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input class="campo-input" type="text" id="nome" name="nome"
+                            placeholder="Digite seu nome completo" minlength="3" maxlength="80" required>
+                    </div>
 
-                <label for="data">Data da viagem:</label>
-                <input type="date" id="data" name="data">
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input class="campo-input" type="email" id="email" name="email"
+                            placeholder="seuemail@exemplo.com" maxlength="100" required>
+                    </div>
+                </div>
 
-                <label for="pessoas">Quantidade de pessoas:</label>
-                <input type="number" id="pessoas" name="pessoas" min="1">
+                <div class="grupo-viagem">
+                    <h3>Dados da viagem</h3>
 
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                    <div class="campo">
+                        <label for="destino">Destino de interesse:</label>
+                        <select class="campo-input" id="destino" name="destino" required>
+                            <option value="">Selecione...</option>
+                            <option value="rio-de-janeiro">Rio de Janeiro</option>
+                            <option value="lencois-maranhenses">Lençóis Maranhenses</option>
+                            <option value="fernando-de-noronha">Fernando de Noronha</option>
+                        </select>
+                    </div>
 
-                <button type="submit">Enviar</button>
+                    <div class="campo">
+                        <label for="data">Data da viagem:</label>
+                        <input class="campo-input" type="date" id="data" name="data" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="pessoas">Quantidade de pessoas:</label>
+                        <input class="campo-input" type="number" id="pessoas" name="pessoas"
+                            placeholder="Ex.: 2" min="1" max="20" required>
+                    </div>
+                </div>
+
+                <div class="campo">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea class="campo-input" id="mensagem" name="mensagem" rows="5" maxlength="500"
+                        placeholder="Conte um pouco sobre o que você procura (opcional)"></textarea>
+                </div>
+
+                <button class="btn-enviar" type="submit">Enviar</button>
 
             </form>
         </section>
     </main>
-    <footer> &copy; 2026 TripWay</footer>
+
+    <footer>&copy; 2026 TripWay</footer>
 </body>
+
 </html>

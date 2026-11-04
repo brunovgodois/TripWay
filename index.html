@@ -3,33 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TripWay - Guia de Viagens</title>
+    <meta name="description" content="Conheça a TripWay e explore Rio de Janeiro, Lençóis Maranhenses e Fernando de Noronha.">
+    <meta name="theme-color" content="#30263f">
+    <title>Seu próximo destino começa aqui | TripWay</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <h1>TripWay</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/destinos.html">Destinos</a></li>
-                <li><a href="pages/pacotes.html">Pacotes</a></li>
-                <li><a href="pages/contato.html">Contato</a></li>
-            </ul>
-        </nav>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="./index.html" aria-label="TripWay — página inicial">
+                <span class="brand-icon">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="m3 11 18-8-8 18-2-8-8-2Z"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linejoin="round"/>
+                        <path d="m11 13 5-5"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span>
+                    Trip<span class="brand-accent">Way</span><span class="brand-dot">.</span>
+                </span>
+            </a>
+
+            <nav class="main-nav" aria-label="Menu principal">
+                <ul>
+                    <li><a href="./index.html" aria-current="page">Home</a></li>
+                    <li><a href="./pages/destinos.html">Destinos</a></li>
+                    <li><a href="./pages/pacotes.html">Pacotes</a></li>
+                    <li><a href="./pages/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <a class="button button-small header-cta" href="./pages/contato.html#formulario">
+                Planejar viagem <span aria-hidden="true">↗</span>
+            </a>
+        </div>
     </header>
-    <main>
-        <section>
-            <h2>Bem-vindo ao TripWay</h2>
-            <p>Descubra os melhores destinos e pacotes de viagem para suas próximas aventuras.</p>
-            <img src="images/banner.jpg" alt="Banner TripWay">
+
+    <main id="conteudo" tabindex="-1">
+        <section class="container hero" aria-labelledby="titulo-home">
+            <div class="hero-content">
+                <p class="eyebrow">
+                    <span class="eyebrow-dot" aria-hidden="true"></span>
+                    Bem-vindo à TripWay
+                </p>
+
+                <h1 id="titulo-home">
+                    O próximo destino.<br>
+                    Uma nova <em>história.</em>
+                </h1>
+
+                <p class="hero-description">
+                    Descubra os melhores destinos e pacotes de viagem para suas
+                    próximas aventuras. O primeiro passo da sua próxima história
+                    começa aqui.
+                </p>
+
+                <div class="button-group">
+                    <a class="button" href="./pages/destinos.html">
+                        Explorar destinos <span aria-hidden="true">↗</span>
+                    </a>
+
+                    <a class="text-link" href="./pages/pacotes.html">
+                        Ver pacotes <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div class="hero-footnote">
+                    <span class="little-line" aria-hidden="true"></span>
+                    <p>
+                        Do mar às dunas.<br>
+                        <strong>Encontre uma viagem com a sua cara.</strong>
+                    </p>
+                </div>
+            </div>
+
+            <figure class="hero-visual">
+                <img
+                    src="./images/noronha.png"
+                    alt="Praia e mar azul em Fernando de Noronha, com o Morro Dois Irmãos ao fundo"
+                    width="800"
+                    height="420"
+                    fetchpriority="high">
+
+                <figcaption class="photo-caption">
+                    <span class="caption-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="m3 11 18-8-8 18-2-8-8-2Z"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                                stroke-linejoin="round"/>
+                            <path d="m11 13 5-5"
+                                stroke="currentColor"
+                                stroke-width="1.6"
+                                stroke-linecap="round"/>
+                        </svg>
+                    </span>
+
+                    <span>
+                        <small>Um lugar para se encantar</small>
+                        <strong>Fernando de Noronha</strong>
+                    </span>
+
+                    <span class="caption-arrow" aria-hidden="true">↗</span>
+                </figcaption>
+
+                <span class="vertical-note" aria-hidden="true">
+                    EXPLORE. DESCUBRA. VIVA.
+                </span>
+            </figure>
         </section>
-        <section>
-            <h2>Sobre a TripWay</h2>
-            <p>A TripWay é uma empresa de viagens que ajuda você a escolher destinos, conhecer serviços e reservar com facilidade.</p>
+
+        <section class="benefits-strip" aria-label="O que você encontra na TripWay">
+            <div class="container benefits-inner">
+                <p><span aria-hidden="true">01</span> Destinos que inspiram</p>
+                <p><span aria-hidden="true">02</span> Roteiros para o seu estilo</p>
+                <p><span aria-hidden="true">03</span> Mais facilidade para planejar</p>
+            </div>
+        </section>
+
+        <section class="container section-space" aria-labelledby="titulo-destinos">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Seu próximo capítulo</p>
+                    <h2 id="titulo-destinos">
+                        Lugares que merecem<br>
+                        entrar no seu roteiro.
+                    </h2>
+                </div>
+
+                <a class="text-link" href="./pages/destinos.html">
+                    Todos os destinos <span aria-hidden="true">↗</span>
+                </a>
+            </div>
+
+            <div class="cards-container">
+                <article class="card destination-card" id="rio">
+                    <a class="card-image-link"
+                        href="./pages/pacotes.html#pacote-rio"
+                        aria-label="Conhecer o pacote para Rio de Janeiro">
+
+                        <img class="card-image"
+                            src="./images/rj.png"
+                            alt="Baía e montanhas do Rio de Janeiro vistas do alto"
+                            width="800"
+                            height="420"
+                            loading="lazy">
+
+                        <span class="image-tag">Cidade &amp; mar</span>
+                    </a>
+
+                    <div class="card-body">
+                        <p class="card-location">
+                            <span aria-hidden="true">01 /</span> Rio de Janeiro
+                        </p>
+
+                        <h3>Rio de Janeiro</h3>
+
+                        <p>
+                            Conhecido por suas belas praias, paisagens naturais e
+                            pontos turísticos famosos, o Rio de Janeiro combina
+                            natureza, cultura e uma atmosfera vibrante.
+                        </p>
+
+                        <a class="text-link" href="./pages/pacotes.html#pacote-rio">
+                            Conhecer o pacote <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card destination-card" id="lencois">
+                    <a class="card-image-link"
+                        href="./pages/pacotes.html#pacote-lencois"
+                        aria-label="Conhecer o pacote para Lençóis Maranhenses">
+
+                        <img class="card-image"
+                            src="./images/lençois.png"
+                            alt="Dunas de areia branca e lagoas dos Lençóis Maranhenses"
+                            width="800"
+                            height="420"
+                            loading="lazy">
+
+                        <span class="image-tag">Natureza &amp; aventura</span>
+                    </a>
+
+                    <div class="card-body">
+                        <p class="card-location">
+                            <span aria-hidden="true">02 /</span> Maranhão
+                        </p>
+
+                        <h3>Lençóis Maranhenses</h3>
+
+                        <p>
+                            Famoso por suas grandes dunas de areia branca e lagoas
+                            de águas cristalinas, o Parque Nacional dos Lençóis
+                            Maranhenses possui uma das paisagens mais
+                            impressionantes do país.
+                        </p>
+
+                        <a class="text-link" href="./pages/pacotes.html#pacote-lencois">
+                            Conhecer o pacote <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="card destination-card" id="noronha">
+                    <a class="card-image-link"
+                        href="./pages/pacotes.html#pacote-noronha"
+                        aria-label="Conhecer o pacote para Fernando de Noronha">
+
+                        <img class="card-image"
+                            src="./images/noronha.png"
+                            alt="Mar azul, praia e Morro Dois Irmãos em Fernando de Noronha"
+                            width="800"
+                            height="420"
+                            loading="lazy">
+
+                        <span class="image-tag">Praias &amp; tranquilidade</span>
+                    </a>
+
+                    <div class="card-body">
+                        <p class="card-location">
+                            <span aria-hidden="true">03 /</span> Pernambuco
+                        </p>
+
+                        <h3>Fernando de Noronha</h3>
+
+                        <p>
+                            Arquipélago conhecido por suas praias paradisíacas,
+                            águas cristalinas e rica vida marinha, sendo um dos
+                            principais destinos naturais do Brasil.
+                        </p>
+
+                        <a class="text-link" href="./pages/pacotes.html#pacote-noronha">
+                            Conhecer o pacote <span aria-hidden="true">↗</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="about-section" id="sobre" aria-labelledby="titulo-sobre">
+            <div class="container about-layout">
+                <div class="about-visual">
+                    <img
+                        src="./images/banner.jpg"
+                        alt="Ilustração TripWay com montanhas ao pôr do sol e a frase Seu guia de viagens pelo mundo"
+                        width="1600"
+                        height="600"
+                        loading="lazy">
+
+                    <span class="about-stamp">
+                        Para onde<br>
+                        vamos agora?
+                    </span>
+                </div>
+
+                <div class="about-content">
+                    <p class="eyebrow">Sobre a TripWay</p>
+
+                    <h2 id="titulo-sobre">
+                        Viajar começa<br>
+                        com uma boa ideia.
+                    </h2>
+
+                    <p>
+                        A TripWay é uma empresa fictícia de viagens que ajuda você
+                        a escolher destinos, conhecer serviços e planejar com
+                        facilidade.
+                    </p>
+
+                    <p>
+                        Reunimos inspiração, informações sobre os lugares e opções
+                        de pacotes para transformar a vontade de viajar em novos
+                        planos.
+                    </p>
+
+                    <a class="text-link" href="./pages/contato.html">
+                        Comece a planejar <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-    <p>&copy; 2026 TripWay - Guia de Viagens</p>
-</footer>
+
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div>
+                <a class="brand brand-footer" href="./index.html">
+                    Trip<span class="brand-accent">Way</span><span class="brand-dot">.</span>
+                </a>
+
+                <p>
+                    Seu guia de viagens pelo mundo.<br>
+                    Novos destinos, boas histórias.
+                </p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Menu do rodapé">
+                <a href="./pages/destinos.html">Explore os destinos</a>
+                <a href="./pages/pacotes.html">Conheça os pacotes</a>
+                <a href="./pages/contato.html">Fale com a TripWay</a>
+            </nav>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 TripWay — Guia de Viagens</p>
+            <p>Projeto acadêmico · FIAP</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,67 +1,180 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TripWay - Pacotes</title>
+    <meta name="description" content="Conheça os pacotes da TripWay para Rio de Janeiro, Lençóis Maranhenses e Fernando de Noronha.">
+    <meta name="theme-color" content="#30263f">
+    <title>Pacotes e serviços | TripWay</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
-    <header>
-        <h1>Pacotes e Serviços</h1>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="../index.html" aria-label="TripWay — página inicial">
+                <span class="brand-icon">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="m3 11 18-8-8 18-2-8-8-2Z"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linejoin="round"/>
+                        <path d="m11 13 5-5"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span>
+                    Trip<span class="brand-accent">Way</span><span class="brand-dot">.</span>
+                </span>
+            </a>
+
+            <nav class="main-nav" aria-label="Menu principal">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="pacotes.html" aria-current="page">Pacotes</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <a class="button button-small header-cta" href="contato.html#formulario">
+                Planejar viagem <span aria-hidden="true">↗</span>
+            </a>
+        </div>
     </header>
 
-    <nav>
-         <ul>
-             <li><a href="../index.html">Home</a></li>
-             <li><a href="destinos.html">Destinos</a></li>
-             <li><a href="pacotes.html">Pacotes</a></li>
-             <li><a href="contato.html">Contato</a></li>    
-        </ul>
-    </nav>
+    <main class="container page-intro" id="conteudo" tabindex="-1">
+        <div class="section-heading">
+            <h1>Pacotes e Serviços</h1>
+        </div>
 
-    <main> 
-        <section> 
-            <h2>Nossos pacotes</h2>
+        <section aria-labelledby="titulo-lista-pacotes">
+            <div class="results-heading">
+                <h2 id="titulo-lista-pacotes">Nossos pacotes</h2>
+                <span>3 destinos para explorar</span>
+            </div>
 
-                <li> 
-                  <br><br>
-                  <h3>Pacote Rio de Janeiro</h3>
-                  <img src="../imagens/rj.jpg" alt="Paisagem do Rio de Janeiro">
-                  <p> Descubra a Cidade Maravilhosa, aproveitando praias famosas como Copacabana e Ipanema, pontos turísticos como o Cristo Redentor e o Pão de Açúcar, além da cultura e gastronomia carioca. Ideal para quem busca diversão, passeios, vida noturna e momentos de descanso à beira-mar. 
-                  <br>Uma ótima escolha para casais, famílias e amigos que desejam combinar lazer, cultura e paisagens incríveis em uma única viagem.
-                  </p>
-                </li> 
+            <div class="package-list">
+                <article class="package-card" id="pacote-rio" aria-labelledby="titulo-pacote-rio">
+                    <div class="package-image-wrap">
+                        <img src="../imagens/rj.jpg" alt="Paisagem do Rio de Janeiro" loading="lazy">
+                        <span class="image-tag">Cidade &amp; mar</span>
+                    </div>
 
+                    <div class="package-content">
+                        <p class="eyebrow">01 / Rio de Janeiro</p>
+                        <h3 id="titulo-pacote-rio">Pacote Rio de Janeiro</h3>
+                        <p>
+                            Descubra a Cidade Maravilhosa, aproveitando praias famosas
+                            como Copacabana e Ipanema, pontos turísticos como o Cristo
+                            Redentor e o Pão de Açúcar, além da cultura e gastronomia
+                            carioca. Ideal para quem busca diversão, passeios, vida
+                            noturna e momentos de descanso à beira-mar.
+                        </p>
+                        <p class="package-audience">
+                            Uma ótima escolha para casais, famílias e amigos que
+                            desejam combinar lazer, cultura e paisagens incríveis
+                            em uma única viagem.
+                        </p>
+                        <div class="package-bottom">
+                            <a class="button button-small" href="contato.html#formulario">
+                                Planejar minha viagem <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-                <li> 
-                    <br><br>
-                    <h3>Pacote Lençóis Maranhenses</h3>
-                    <img src="../imagens/lencois.png" alt="Paisagem dos Lençóis Maranhenses">
-                    <p>Explore as dunas de areia branca e as lagoas de águas cristalinas dos Lençóis Maranhenses, um dos cenários naturais mais impressionantes do Brasil. Aproveite passeios de aventura, paisagens perfeitas para fotografias e momentos de tranquilidade em contato com a natureza.
-                    <br>Ideal para quem deseja fugir da rotina, conhecer lugares diferentes e viver uma experiência de ecoturismo inesquecível. Você também poderá descobrir a cultura local e experimentar a culinária típica do Maranhão.
-                    </p>
-                </li>
+                <article class="package-card" id="pacote-lencois" aria-labelledby="titulo-pacote-lencois">
+                    <div class="package-image-wrap">
+                        <img src="../imagens/lencois.png" alt="Paisagem dos Lençóis Maranhenses" loading="lazy">
+                        <span class="image-tag">Natureza &amp; aventura</span>
+                    </div>
 
+                    <div class="package-content">
+                        <p class="eyebrow">02 / Maranhão</p>
+                        <h3 id="titulo-pacote-lencois">Pacote Lençóis Maranhenses</h3>
+                        <p>
+                            Explore as dunas de areia branca e as lagoas de águas
+                            cristalinas dos Lençóis Maranhenses, um dos cenários
+                            naturais mais impressionantes do Brasil. Aproveite
+                            passeios de aventura, paisagens perfeitas para fotografias
+                            e momentos de tranquilidade em contato com a natureza.
+                        </p>
+                        <p class="package-audience">
+                            Ideal para quem deseja fugir da rotina, conhecer lugares
+                            diferentes e viver uma experiência de ecoturismo inesquecível.
+                            Você também poderá descobrir a cultura local e experimentar
+                            a culinária típica do Maranhão.
+                        </p>
+                        <div class="package-bottom">
+                            <a class="button button-small" href="contato.html#formulario">
+                                Planejar minha viagem <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
 
-                <li> 
-                    <br><br>
-                    <h3>Pacote Fernando de Noronha</h3>
-                    <img src="../imagens/noronha.jpg" alt="Paisagem de Fernando de Noronha">
-                    <p>Conheça o paraíso tropical de Fernando de Noronha, famoso por suas praias preservadas, águas cristalinas e rica vida marinha. Aproveite momentos de descanso, explore paisagens incríveis, pratique snorkeling e descubra praias e mirantes inesquecíveis. 
-                    <br>Perfeito para casais que procuram uma viagem romântica e para amantes da natureza que desejam fugir da correria do dia a dia. Uma experiência especial que combina tranquilidade, aventura e contato com algumas das mais belas paisagens do Brasil.
-                    </p>
+                <article class="package-card" id="pacote-noronha" aria-labelledby="titulo-pacote-noronha">
+                    <div class="package-image-wrap">
+                        <img src="../imagens/noronha.jpg" alt="Paisagem de Fernando de Noronha" loading="lazy">
+                        <span class="image-tag">Praias &amp; tranquilidade</span>
+                    </div>
 
-                </li>
-            </ul>
-
+                    <div class="package-content">
+                        <p class="eyebrow">03 / Pernambuco</p>
+                        <h3 id="titulo-pacote-noronha">Pacote Fernando de Noronha</h3>
+                        <p>
+                            Conheça o paraíso tropical de Fernando de Noronha, famoso
+                            por suas praias preservadas, águas cristalinas e rica vida
+                            marinha. Aproveite momentos de descanso, explore paisagens
+                            incríveis, pratique snorkeling e descubra praias e mirantes
+                            inesquecíveis.
+                        </p>
+                        <p class="package-audience">
+                            Perfeito para casais que procuram uma viagem romântica
+                            e para amantes da natureza que desejam fugir da correria
+                            do dia a dia. Uma experiência especial que combina
+                            tranquilidade, aventura e contato com algumas das mais
+                            belas paisagens do Brasil.
+                        </p>
+                        <div class="package-bottom">
+                            <a class="button button-small" href="contato.html#formulario">
+                                Planejar minha viagem <span aria-hidden="true">↗</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
-    
-    <footer>
-        <br><br>
-        <p>© 2026 TripWay</p>
+
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div>
+                <a class="brand brand-footer" href="../index.html">
+                    Trip<span class="brand-accent">Way</span><span class="brand-dot">.</span>
+                </a>
+
+                <p>
+                    Seu guia de viagens pelo mundo.<br>
+                    Novos destinos, boas histórias.
+                </p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Menu do rodapé">
+                <a href="destinos.html">Explore os destinos</a>
+                <a href="pacotes.html">Conheça os pacotes</a>
+                <a href="contato.html">Fale com a TripWay</a>
+            </nav>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 TripWay — Guia de Viagens</p>
+            <p>Projeto acadêmico · FIAP</p>
+        </div>
     </footer>
 </body>
 </html>

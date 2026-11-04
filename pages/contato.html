@@ -1,62 +1,123 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TripWay</title>
+    <title>Contato e Reserva | TripWay</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Contato / Reserva</h1>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="destinos.html">Destinos</a></li>
-                <li><a href="pacotes.html">Pacotes</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="../index.html" aria-label="TripWay — página inicial">
+                <span class="brand-icon">
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="m3 11 18-8-8 18-2-8-8-2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                        <path d="m11 13 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                </span>
+                <span>Trip<span class="brand-accent">Way</span><span class="brand-dot">.</span></span>
+            </a>
+
+            <nav class="main-nav" aria-label="Menu principal">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="pacotes.html">Pacotes</a></li>
+                    <li><a href="contato.html" aria-current="page">Contato</a></li>
+                </ul>
+            </nav>
+
+            <a class="button button-small header-cta" href="#formulario">
+                Planejar viagem <span aria-hidden="true">↗</span>
+            </a>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Faça sua reserva</h2>
-            <p>Preencha o formulário e entraremos em contato.</p>
-
-            <img src="../images/banner.jpeg" alt="Banner do TripWay">
-
-            <form action="#" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="destino">Destino de interesse:</label>
-                <select id="destino" name="destino">
-                    <option value="">Selecione...</option>
-                    <option value="praia">Praia</option>
-                    <option value="montanha">Roça</option>
-                    <option value="cidade">Cidade</option>
-                </select>
-
-                <label for="data">Data da viagem:</label>
-                <input type="date" id="data" name="data">
-
-                <label for="pessoas">Quantidade de pessoas:</label>
-                <input type="number" id="pessoas" name="pessoas" min="1">
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="5"></textarea>
-
-                <button type="submit">Enviar</button>
-
-            </form>
+    <main class="container section-space" id="conteudo" tabindex="-1">
+        <section class="contact-intro" aria-labelledby="titulo-contato">
+            <h1 id="titulo-contato">Contato / Reserva</h1>
         </section>
+
+        <div class="contact-layout">
+            <aside class="contact-aside" aria-label="TripWay">
+                <figure class="about-visual">
+                    <img src="../images/banner.jpeg"
+                        alt="TripWay: seu guia de viagens pelo mundo, com montanhas ao pôr do sol"
+                        width="1600" height="600">
+                </figure>
+            </aside>
+
+            <section class="form-panel" id="formulario" aria-labelledby="titulo-formulario">
+                <h2 id="titulo-formulario">Faça sua reserva</h2>
+                <p class="form-introduction">Preencha o formulário e entraremos em contato.</p>
+
+                <form action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" autocomplete="name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="destino">Destino de interesse:</label>
+                        <select id="destino" name="destino">
+                            <option value="">Selecione...</option>
+                            <option value="praia">Praia</option>
+                            <option value="montanha">Roça</option>
+                            <option value="cidade">Cidade</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="data">Data da viagem:</label>
+                            <input type="date" id="data" name="data">
+                        </div>
+                        <div class="form-field">
+                            <label for="pessoas">Quantidade de pessoas:</label>
+                            <input type="number" id="pessoas" name="pessoas" min="1">
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                    </div>
+
+                    <button class="button form-submit" type="submit">Enviar</button>
+                </form>
+            </section>
+        </div>
     </main>
-    <footer> &copy; 2026 TripWay</footer>
+
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div>
+                <a class="brand brand-footer" href="../index.html">
+                    Trip<span class="brand-accent">Way</span><span class="brand-dot">.</span>
+                </a>
+                <p>Seu guia de viagens pelo mundo.<br>Novos destinos, boas histórias.</p>
+            </div>
+            <nav class="footer-nav" aria-label="Menu do rodapé">
+                <a href="destinos.html">Explore os destinos</a>
+                <a href="pacotes.html">Conheça os pacotes</a>
+                <a href="contato.html">Fale com a TripWay</a>
+            </nav>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 TripWay — Guia de Viagens</p>
+            <p>Projeto acadêmico · FIAP</p>
+        </div>
+    </footer>
 </body>
 </html>
